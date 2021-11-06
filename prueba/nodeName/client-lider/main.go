@@ -5,11 +5,12 @@ import (
 	"log"
 	"math/rand"
 	pb "sisDistribuidos/nameNode-grpc/nodeName/protonodename"
+
 	"google.golang.org/grpc"
 )
 
 const (
-	address = "localhost:50051"
+	address = "10.6.40.196:40051"
 )
 
 func main() {
@@ -22,7 +23,7 @@ func main() {
 	serviceClient := pb.NewInformarJugadasClient(conn)
 
 	for i := 1; i < 11; i++ {
-		
+
 		var NumeroJugador int = rand.Intn(14)
 		var Ronda int = rand.Intn(3)
 		var jugada int = rand.Intn(3)
@@ -32,6 +33,6 @@ func main() {
 		if err != nil {
 			log.Fatalf("could not informar jugada: %v", err)
 		}
-		log.Printf("Ronda %v ,Jugadas: %v " + "del jugador %v", Ronda,r.GetJugadas(), NumeroJugador)
+		log.Printf("Ronda %v ,Jugadas: %v "+"del jugador %v", Ronda, r.GetJugadas(), NumeroJugador)
 	}
 }
