@@ -1,0 +1,18 @@
+syntax = "proto3";
+package protodatanode;
+
+option go_package = "sisDistribuidos/nameNode-grpc/dataNode";
+
+service informarJugadas {
+    rpc infoJugadas(infoJugada) returns (registro);
+}
+
+message infoJugada {
+    int32 numeroJugador = 1;
+    int32 ronda = 2;
+    int32 jugada = 3;
+}
+
+message registro {
+    repeated int32 jugadas = 1;
+}

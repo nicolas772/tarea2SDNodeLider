@@ -1,0 +1,10 @@
+Jugador_13 Ronda_0 1.3
+Jugador_7 Ronda_1 1.3
+Jugador_3 Ronda_2 1.3
+Jugador_8 Ronda_2 1.2
+Jugador_4 Ronda_2 1.3
+Jugador_4 Ronda_0 1.3
+Jugador_7 Ronda_2 1.1
+Jugador_2 Ronda_2 1.1
+Jugador_1 Ronda_1 1.1
+Jugador_6 Ronda_0 1.1
